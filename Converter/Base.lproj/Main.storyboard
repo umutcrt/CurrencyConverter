@@ -48,7 +48,7 @@
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chW-Eb-k2u">
                                 <rect key="frame" x="51" y="206" width="313" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <color key="backgroundColor" red="1" green="0.99450797747439568" blue="0.88814013346902543" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="24"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -56,7 +56,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTr-iR-Kcz">
                                 <rect key="frame" x="51" y="398" width="313" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="backgroundColor" red="0.93038809911517495" green="0.9719345193088802" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -65,12 +65,13 @@
                                 <rect key="frame" x="168" y="114" width="78" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="32"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0s-jY-n96">
                                 <rect key="frame" x="51" y="787" width="313" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="convert">
                                     <fontDescription key="titleFontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="32"/>
@@ -190,7 +191,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCF-Qp-LMB">
-                                <rect key="frame" x="168" y="715" width="78" height="64"/>
+                                <rect key="frame" x="168" y="716" width="78" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="0">
@@ -216,8 +217,22 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="clearLabel" destination="Eal-dY-9Fe" id="trp-gq-5ZR"/>
+                        <outlet property="convertLabel" destination="h0s-jY-n96" id="vU2-W0-mjp"/>
+                        <outlet property="delLabel" destination="V1X-Mx-co9" id="uzB-Bi-lVM"/>
                         <outlet property="inputLabel" destination="OTr-iR-Kcz" id="r2r-RG-FLd"/>
+                        <outlet property="num0Label" destination="uCF-Qp-LMB" id="VsX-Iu-OHz"/>
+                        <outlet property="num1Label" destination="fTF-bM-nhQ" id="rwB-fK-Ogd"/>
+                        <outlet property="num2Label" destination="4jW-eG-2i7" id="XyO-qF-fWu"/>
+                        <outlet property="num3Label" destination="53A-ml-K5Z" id="7H3-ln-pv5"/>
+                        <outlet property="num4Label" destination="hU8-pn-r2P" id="UUp-VS-yCr"/>
+                        <outlet property="num5Label" destination="k01-94-xuE" id="Gsa-Ca-6Zc"/>
+                        <outlet property="num6Label" destination="ME5-Ej-NV7" id="NCK-Ch-1Le"/>
+                        <outlet property="num7Label" destination="YTw-9n-HQy" id="sSd-If-UE3"/>
+                        <outlet property="num8Label" destination="KxW-jB-ZZr" id="veD-VP-2QE"/>
+                        <outlet property="num9Label" destination="8Wd-C9-C1L" id="oiF-3J-SNj"/>
                         <outlet property="resultLabel" destination="chW-Eb-k2u" id="qLR-y7-b30"/>
+                        <outlet property="toLabel" destination="Yrb-eS-H4l" id="YV5-Sz-Rgv"/>
                         <outlet property="unit1Pop" destination="2d8-wN-MSK" id="BFI-1r-ZPp"/>
                         <outlet property="unit2Pop" destination="08v-xP-WBa" id="mNm-xR-keD"/>
                     </connections>
@@ -231,14 +246,8 @@
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

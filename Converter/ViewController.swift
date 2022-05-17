@@ -17,7 +17,23 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var unit1Pop: UIButton!
     @IBOutlet weak var unit2Pop: UIButton!
+    @IBOutlet weak var toLabel: UILabel!
+    @IBOutlet weak var num1Label: UIButton!
+    @IBOutlet weak var num2Label: UIButton!
+    @IBOutlet weak var num3Label: UIButton!
+    @IBOutlet weak var num4Label: UIButton!
+    @IBOutlet weak var num5Label: UIButton!
+    @IBOutlet weak var num6Label: UIButton!
+    @IBOutlet weak var num7Label: UIButton!
+    @IBOutlet weak var num8Label: UIButton!
+    @IBOutlet weak var num9Label: UIButton!
+    @IBOutlet weak var num0Label: UIButton!
+    @IBOutlet weak var clearLabel: UIButton!
+    @IBOutlet weak var delLabel: UIButton!
+    @IBOutlet weak var convertLabel: UIButton!
     @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var inputLabel: UILabel!
+    
     func setPopUpButton1(){
         let optionClosure = {(action : UIAction) in
             currency1 = action.title
@@ -69,7 +85,7 @@ class ViewController: UIViewController {
             resultLabel.text = "\(Double(inputLabel.text!)! * ratesTotals)"
         }
     }
-    @IBOutlet weak var inputLabel: UILabel!
+    
     @IBAction func num1(_ sender: Any) {
         inputLabel.text! += "1"
     }
@@ -112,6 +128,27 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let width = view.frame.size.width
+        let height = view.frame.size.height
+        unit1Pop.frame = CGRect(x: width * 0.04, y: height * 0.15, width: width * 0.28, height: height * 0.05)
+        unit2Pop.frame = CGRect(x: width * 0.68, y: height * 0.15, width: width * 0.28, height: height * 0.05)
+        toLabel.frame = CGRect(x: width * 0.36, y: height * 0.15, width: width * 0.28, height: height * 0.05)
+        resultLabel.frame = CGRect(x: width * 0.04, y: height * 0.25, width: width * 0.92, height: height * 0.08)
+        inputLabel.frame = CGRect(x: width * 0.04, y: height * 0.40, width: width * 0.92, height: height * 0.08)
+        num1Label.frame = CGRect(x: width * 0.16, y: height * 0.52, width: width * 0.16, height: height * 0.08)
+        num2Label.frame = CGRect(x: width * 0.42, y: height * 0.52, width: width * 0.16, height: height * 0.08)
+        num3Label.frame = CGRect(x: width * 0.68, y: height * 0.52, width: width * 0.16, height: height * 0.08)
+        num4Label.frame = CGRect(x: width * 0.16, y: height * 0.61, width: width * 0.16, height: height * 0.08)
+        num5Label.frame = CGRect(x: width * 0.42, y: height * 0.61, width: width * 0.16, height: height * 0.08)
+        num6Label.frame = CGRect(x: width * 0.68, y: height * 0.61, width: width * 0.16, height: height * 0.08)
+        num7Label.frame = CGRect(x: width * 0.16, y: height * 0.70, width: width * 0.16, height: height * 0.08)
+        num8Label.frame = CGRect(x: width * 0.42, y: height * 0.70, width: width * 0.16, height: height * 0.08)
+        num9Label.frame = CGRect(x: width * 0.68, y: height * 0.70, width: width * 0.16, height: height * 0.08)
+        num0Label.frame = CGRect(x: width * 0.42, y: height * 0.79, width: width * 0.16, height: height * 0.08)
+        delLabel.frame = CGRect(x: width * 0.68, y: height * 0.79, width: width * 0.16, height: height * 0.08)
+        clearLabel.frame = CGRect(x: width * 0.16, y: height * 0.79, width: width * 0.16, height: height * 0.08)
+        convertLabel.frame = CGRect(x: width * 0.2, y: height * 0.88, width: width * 0.60, height: height * 0.1)
+
         
         downloadCryptos()
         setPopUpButton1()
