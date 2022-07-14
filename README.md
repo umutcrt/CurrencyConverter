@@ -1,4 +1,4 @@
-README.md
+# README.md
 Easily access the most up-to-date values of international exchange rates live.
 
 With its minimalist and easy use, you can easily follow the exchange rates wherever you are.
