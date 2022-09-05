@@ -1,0 +1,6 @@
+framework module Pods_CurWidgetExtension {
+  umbrella header "Pods-CurWidgetExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}
